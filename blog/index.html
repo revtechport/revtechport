@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog — RevTechPort</title>
+<meta name="description" content="Notes on sales operations, CRM systems, and admissions from RevTechPort.">
+<link rel="icon" href="data:,">
+<style>
+:root{
+  --bg:#F7F5F0;
+  --surface:#FFFFFF;
+  --ink:#12202B;
+  --muted:#4E5D68;
+  --border:#D9D3C6;
+  --accent:#A9702F;
+  --accent-ink:#7A4F20;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0F1A24;
+    --surface:#16232F;
+    --ink:#EDEAE2;
+    --muted:#9AA7B0;
+    --border:#2A3D4D;
+    --accent:#D6A059;
+    --accent-ink:#E6BC82;
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  padding-inline:24px;
+}
+h1,h2{
+  font-family:"Fraunces","Iowan Old Style","Georgia",serif;
+  font-weight:600;
+  margin:0;
+  color:var(--ink);
+}
+.wrap{max-width:760px;margin:0 auto;}
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+  padding-block:28px;
+  border-bottom:1px solid var(--border);
+}
+.wordmark{
+  font-family:"Fraunces",serif;
+  font-weight:600;
+  font-size:1.05rem;
+  text-decoration:none;
+  color:var(--ink);
+}
+.wordmark span{color:var(--accent-ink);}
+.header-right a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);font-size:0.9rem;}
+.header-right a:hover{color:var(--accent-ink);border-color:var(--accent-ink);}
+
+.page-title{padding-block:56px 8px;}
+.page-title p{color:var(--muted);margin-top:12px;max-width:52ch;line-height:1.6;}
+
+.posts{
+  border-top:1px solid var(--border);
+  padding-block:8px;
+  margin-bottom:64px;
+}
+.post-entry{
+  padding-block:28px;
+  border-bottom:1px solid var(--border);
+}
+.post-entry:last-child{border-bottom:none;}
+.post-entry .date{
+  font-size:0.8rem;
+  color:var(--muted);
+  letter-spacing:0.02em;
+}
+.post-entry h2{
+  font-size:1.3rem;
+  margin-top:6px;
+}
+.post-entry a{color:var(--ink);text-decoration:none;}
+.post-entry a:hover{color:var(--accent-ink);}
+.post-entry p{color:var(--muted);line-height:1.6;margin-top:10px;max-width:60ch;}
+
+.empty-note{
+  color:var(--muted);
+  line-height:1.6;
+  padding-block:28px;
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&display=swap">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="wordmark" href="/">Rev<span>Tech</span>Port</a>
+    <div class="header-right"><a href="/#contact">ivan.hudoletnjak@revtechport.com</a></div>
+  </header>
+
+  <div class="page-title">
+    <h1>Notes</h1>
+    <p>Occasional writing on sales operations, CRM systems, and admissions — from the operator's side of the desk.</p>
+  </div>
+
+  <div class="posts">
+    <!-- POSTS_START -->
+    <p class="empty-note">Nothing published yet. Check back soon.</p>
+    <!-- POSTS_END -->
+  </div>
+</div>
+</body>
+</html>
